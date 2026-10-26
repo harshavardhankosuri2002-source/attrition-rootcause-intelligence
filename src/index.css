@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white min-h-screen;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b1120;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
+
+.card-panel {
+  @apply bg-slate-900/90 border border-slate-800/80 rounded-xl shadow-lg shadow-black/20 backdrop-blur-sm;
+}
+
+.card-panel-hover {
+  @apply transition-all duration-200 hover:border-slate-700/80 hover:shadow-xl hover:shadow-black/30;
+}
+
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium tracking-wide;
+}
+
+.badge-blue {
+  @apply bg-blue-950/80 text-blue-300 border border-blue-800/60;
+}
+
+.badge-emerald {
+  @apply bg-emerald-950/80 text-emerald-300 border border-emerald-800/60;
+}
+
+.badge-amber {
+  @apply bg-amber-950/80 text-amber-300 border border-amber-800/60;
+}
+
+.badge-rose {
+  @apply bg-rose-950/80 text-rose-300 border border-rose-800/60;
+}
+
+.badge-slate {
+  @apply bg-slate-800/80 text-slate-300 border border-slate-700/60;
+}
