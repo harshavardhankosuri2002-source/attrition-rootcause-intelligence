@@ -4,6 +4,5 @@ pydantic
 pandas
 numpy
 scikit-learn
-scipy
 openpyxl
 python-multipart
